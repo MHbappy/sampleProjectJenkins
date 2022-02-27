@@ -17,7 +17,7 @@ public class HelloworldApplication {
 	public String getTest(){
 		return "a book or other written or printed work, regarded in terms of its content rather than its physical form \n" +
 				"a book or other written or printed work, regarded in terms of its content rather than its physical form \n" +
-				"a book or other written or printed work, regarded in terms of its content rather than its physical form \n";
+				"a book or other written or printed work, regarded in terms of its content rather than its physical \n";
 	}
 
 }
