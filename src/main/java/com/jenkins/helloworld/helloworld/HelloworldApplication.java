@@ -1,0 +1,23 @@
+package com.jenkins.helloworld.helloworld;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@SpringBootApplication
+@RestController
+public class HelloworldApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HelloworldApplication.class, args);
+	}
+
+	@GetMapping("/text")
+	public String getTest(){
+		return "a book or other written or printed work, regarded in terms of its content rather than its physical form \n" +
+				"a book or other written or printed work, regarded in terms of its content rather than its physical form \n" +
+				"a book or other written or printed work, regarded in terms of its content rather than its physical form \n";
+	}
+
+}
