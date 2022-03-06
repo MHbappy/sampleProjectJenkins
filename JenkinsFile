@@ -1,0 +1,32 @@
+pipeline{
+    agent any
+    
+    stages{
+        
+        stage('Git Clone'){
+            steps{
+                git 'https://github.com/MHbappy/sampleProjectJenkins.git'
+            }
+        }
+        
+        stage('Test'){
+            steps{
+                sh 'mvn clean'
+            }
+        }
+        
+        stage('Packaging'){
+            steps{
+                sh 'mvn package'
+            }
+        }
+        
+        stage('Deploying'){
+            steps{
+                echo 'deploy is running'
+            }
+        }
+        
+        
+    }
+}
